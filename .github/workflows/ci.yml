@@ -3,10 +3,10 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  lint-and-test:
+  lint:
     runs-on: ubuntu-20.04
     env:
-      MIX_ENV: test
+      MIX_ENV: dev
 
     name: Lint
     steps:
